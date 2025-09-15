@@ -1,0 +1,67 @@
+site_name: Snapshot — Signed Photo
+repo_url: https://github.com/niyakumo/snapshot
+repo_name: niyakumo/snapshot
+edit_uri: edit/main/docs/
+strict: true
+
+theme:
+  name: material
+  features:
+    - content.tooltips
+    - content.code.copy
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+plugins:
+  - search
+  - kroki # рендерит ```plantuml блоки (UC/seq/state/UI salt)
+  - swagger-ui-tag # как в прошлом тестовом
+  - macros # main.py подхватится автоматически
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - abbr
+  - def_list
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - ONE-DOC: index.md
+  - Глоссарий: glossary.md
+  - API: api/index.md
+
+extra:
+  spec_version: "0.1"
+  spec_status: "Draft"
+  spec_owner: "System Analyst"
+  spec_date: "2025-09-15"
+
+watch:
+  - includes

@@ -1,0 +1,8 @@
+mkdocs-material
+mkdocs-macros-plugin
+mkdocs-swagger-ui-tag
+mkdocs-redoc-tag
+mkdocs-git-revision-date-localized-plugin
+mkdocs-glossary
+mkdocs-kroki-plugin
+pymdown-extensions

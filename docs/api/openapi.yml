@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: Snapshot — External API (v0 placeholder)
+  version: "0.0.0"
+  description: >
+    Для MVP внешних API нет. Спецификация оставлена как заглушка,
+    чтобы сохранить совместимость с док-сборкой и навигацией.
+servers: []
+paths: {}
+components: {}
